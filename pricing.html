@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing | EchoGrounds</title>
+    <meta
+      name="description"
+      content="Explore EchoGrounds pricing plans for Indigenous language programs, including annual subscriptions, pilot options, multi-year discounts, and multi-community pricing."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/EGICON.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-bg" aria-hidden="true"></div>
+
+    <header class="nav-wrap">
+      <nav class="container nav">
+        <a href="index.html" class="brand" aria-label="EchoGrounds home">
+          <img src="images/EGICON.png" alt="EchoGrounds logo" class="brand-mark" />
+          <span>EchoGrounds</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          Menu
+        </button>
+
+        <ul class="nav-links" id="desktop-menu">
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html" class="nav-active">Pricing</a></li>
+          <li><a href="funding.html">Funding</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a class="btn btn-solid" href="#" data-book-meeting>Request Community Demo</a>
+        </div>
+      </nav>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="features.html">Features</a>
+        <a href="pricing.html" class="nav-active">Pricing</a>
+        <a href="funding.html">Funding</a>
+        <a class="btn btn-solid" href="#" data-book-meeting>Request Community Demo</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="pricing-page-hero container reveal">
+        <p class="eyebrow">Pricing</p>
+        <h1>Flexible pricing designed for Indigenous language programs of all sizes</h1>
+        <p class="lead">
+          Start with a straightforward annual plan, test with a short pilot, or secure multi-year pricing for long-term stability.
+        </p>
+      </section>
+
+      <section class="container pricing-detail-grid">
+        <article class="price-card featured reveal">
+          <span class="chip">Recommended Standard Plan</span>
+          <h2>Annual Subscription</h2>
+          <p class="price">
+            <span class="amount">$7,500 CAD</span>
+            <span class="term">per year</span>
+          </p>
+          <ul>
+            <li>One simple annual subscription for the entire community</li>
+            <li>Unlimited users</li>
+            <li>Unlimited language content</li>
+            <li>All updates included</li>
+            <li>Full support included</li>
+            <li>Eligible for ILCP and other Indigenous language funding programs</li>
+          </ul>
+        </article>
+
+        <article class="price-card reveal">
+          <h2>Pilot / Trial Option</h2>
+          <p class="price">
+            <span class="amount">$600 CAD</span>
+            <span class="term">optional 2-month pilot</span>
+          </p>
+          <ul>
+            <li>Includes full access to all features</li>
+            <li>Designed for communities unsure about long-term commitment</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="container pricing-detail-grid pricing-detail-grid--stacked">
+        <article class="price-card reveal">
+          <h2>Multi-Year Subscription Discounts</h2>
+          <p class="lead">
+            Lower annual cost while locking in stability for your language program planning.
+          </p>
+          <div class="price-breakdown">
+            <p class="price-line"><strong>2-year plan</strong><span>$12,500 CAD</span></p>
+            <p class="price-divider">Saves $2,500</p>
+            <p class="price-line"><strong>3-year plan</strong><span>$18,000 CAD</span></p>
+            <p class="price-divider">Saves $4,500</p>
+          </div>
+          <ul>
+            <li>Ideal for communities using multi-year funding streams</li>
+            <li>Locks in pricing and ensures long-term stability</li>
+          </ul>
+        </article>
+
+        <article class="price-card reveal">
+          <h2>Large Nation / Multi-Community Pricing</h2>
+          <p class="price">
+            <span class="amount">$12,000 - $20,000 CAD</span>
+            <span class="term">per year based on scale</span>
+          </p>
+          <ul>
+            <li>For Nations with multiple communities, schools, or language groups</li>
+            <li>Unlimited users across all participating communities</li>
+            <li>Centralized administration and support</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="cta container reveal">
+        <div>
+          <h2>Want help selecting the right pricing path?</h2>
+          <p>Book a meeting and we can map options to your program goals and funding timelines.</p>
+        </div>
+        <a class="btn btn-solid" href="#" data-book-meeting>Book A Meeting</a>
+      </section>
+    </main>
+
+    <div
+      class="booking-modal"
+      id="booking-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="booking-modal-title"
+    >
+      <button class="booking-modal__backdrop" type="button" aria-label="Close booking modal" data-booking-close></button>
+
+      <div class="booking-modal__panel" role="document">
+        <div class="booking-modal__head">
+          <h2 id="booking-modal-title">Book A Meeting</h2>
+          <button class="booking-modal__close" type="button" aria-label="Close" data-booking-close>
+            Close
+          </button>
+        </div>
+
+        <p class="booking-modal__intro">
+          Pick a time that works for you, then complete the booking form to confirm your appointment.
+        </p>
+
+        <div class="booking-embed-grid">
+          <section class="booking-embed-card booking-embed-card--availability">
+            <h3>Availability</h3>
+            <div class="booking-embed-frame-wrap">
+              <iframe
+                src="https://calendar.zohocloud.ca/zc/ui/embed/#calendar=zz08011230bc2e064a640a241062b5502e98fea48b4d63475bae48bad9fea0e6e7571a38672d709fa920150eb56b5e31984eaf9a97&title=matthew&type=1&language=en&timezone=America%2FToronto&showTitle=0&showTimezone=1&startingDayOfWeek=0&timeFormat=0&view=work&showDetail=0&theme=1&showAttendee=0&showSwitchingViews=0&expandAllday=0&eventColorType=light&hourStart=9&hourEnd=18&showLogo=0"
+                title="matthew"
+                loading="lazy"
+                frameborder="0"
+                scrolling="no"
+              ></iframe>
+            </div>
+          </section>
+
+          <section class="booking-embed-card booking-embed-card--appointment">
+            <h3>Appointment Request</h3>
+            <div class="booking-embed-frame-wrap">
+              <iframe
+                src="https://calendar.zohocloud.ca/eventreqForm/zz08011230bc2e064a640a241062b5502e98fea48b4d63475bae48bad9fea0e6e7571a38672d709fa920150eb56b5e31984eaf9a97?theme=0&l=en&tz=America/Toronto"
+                title="Schedule appointment for matthew"
+                loading="lazy"
+                frameborder="0"
+                scrolling="no"
+              ></iframe>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <img src="images/EGICON.png" alt="EchoGrounds logo" class="brand-mark" />
+            <span>EchoGrounds</span>
+          </a>
+          <a href="https://bytesizecoder.ca/" class="brand">
+            <img src="images/bsc-logo-icon.png" alt="Byte Size Coder logo" width="40" />
+            <span>Byte Size Coder</span>
+          </a>
+        </div>
+
+        <div class="footer-contact">
+          <p class="footer-heading">Contact</p>
+          <p>London, Ontario, Canada</p>
+          <p><a href="mailto:info@echogrounds.ca">info@echogrounds.ca</a></p>
+          <p><a href="tel:+12262371409">226-237-1409</a></p>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <div class="footer-legal">
+          <a href="https://workdrive.zohopublic.ca/writer/open/j1asa7d765d1eefdf4cc7bab86d0ece220686" target="_blank">Privacy Policy</a>
+          <a href="https://workdrive.zohopublic.ca/writer/open/j1asa708bfcce7c444342aa283cc8c74a929b" target="_blank">Data Sovereignty</a>
+          <a href="https://workdrive.zohopublic.ca/writer/open/j1asa41634dd5829e4482af4dd826d3c389b3" target="_blank">Terms of Service</a>
+        </div>
+        <p>© <span id="year"></span> EchoGrounds. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

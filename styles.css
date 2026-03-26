@@ -903,6 +903,82 @@ body.modal-open {
   max-width: 860px;
 }
 
+.pricing-page-hero {
+  padding-top: 3.5rem;
+  padding-bottom: 0.5rem;
+  max-width: 860px;
+}
+
+.funding-page-hero {
+  padding-top: 3.5rem;
+  padding-bottom: 0.5rem;
+  max-width: 860px;
+}
+
+.funding-page-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  margin-bottom: 0.9rem;
+}
+
+.funding-page-hero .lead {
+  max-width: 72ch;
+}
+
+.pricing-page-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  margin-bottom: 0.9rem;
+}
+
+.pricing-page-hero .lead {
+  max-width: 68ch;
+}
+
+.pricing-detail-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.funding-detail-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.pricing-detail-grid--stacked {
+  margin-top: 1rem;
+}
+
+.funding-detail-grid--stacked {
+  margin-top: 1rem;
+}
+
+.funding-subheading {
+  margin-top: 0.35rem;
+  margin-bottom: 0.85rem;
+  color: var(--brand-strong);
+  font-weight: 800;
+}
+
+.funding-copy-block {
+  margin-top: 1.2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.2rem;
+}
+
+.funding-copy-block h2 {
+  font-size: clamp(1.35rem, 2.8vw, 2rem);
+  margin-bottom: 0.7rem;
+}
+
+.funding-copy-block p {
+  color: var(--muted);
+}
+
 .feature-page-hero h1 {
   font-size: clamp(2rem, 4.5vw, 3rem);
   margin-bottom: 0.9rem;
@@ -1080,6 +1156,8 @@ body.modal-open {
   .split,
   .community-grid,
   .pricing-grid,
+  .pricing-detail-grid,
+  .funding-detail-grid,
   .funding-grid,
   .roadmap-grid {
     grid-template-columns: 1fr;
