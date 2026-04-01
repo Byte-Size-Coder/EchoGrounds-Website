@@ -310,6 +310,33 @@ main {
   margin-top: 5.4rem;
 }
 
+.values-preview {
+  margin-top: 5.4rem;
+}
+
+.values-preview-grid {
+  margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.value-pill-card {
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.value-pill-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.value-pill-card p {
+  color: var(--muted);
+}
+
 .section-head {
   max-width: 760px;
   margin-bottom: 1.3rem;
@@ -419,6 +446,73 @@ main {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
+}
+
+.pricing-grid .price-card:nth-child(3) {
+  grid-column: 1 / -1;
+}
+
+.pricing-included-panel,
+.pricing-caveat-panel,
+.pricing-summary {
+  margin-top: 1.2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.2rem;
+}
+
+.pricing-included-panel h3,
+.pricing-caveat-panel h3,
+.pricing-summary h2 {
+  font-size: clamp(1.3rem, 2.6vw, 1.8rem);
+  margin-bottom: 0.55rem;
+}
+
+.pricing-included-grid {
+  margin: 0.8rem 0 0.85rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem;
+}
+
+.pricing-included-grid span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.45rem 0.7rem;
+  border-radius: 0.7rem;
+  border: 1px solid rgba(194, 65, 12, 0.2);
+  background: linear-gradient(150deg, #fff8f1, #fff2e7);
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.pricing-included-panel p,
+.pricing-caveat-panel p,
+.pricing-note {
+  color: var(--muted);
+}
+
+.pricing-caveat-panel blockquote,
+.pricing-clause {
+  margin: 0.9rem 0 0;
+  padding: 0.85rem 0.95rem;
+  border-left: 4px solid var(--brand);
+  border-radius: 0.65rem;
+  background: linear-gradient(160deg, #fff8f1, #fff2e7);
+  color: #5f3925;
+  font-weight: 600;
+}
+
+.pricing-summary ul {
+  margin: 0.6rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.pricing-summary li + li {
+  margin-top: 0.35rem;
 }
 
 .funding-panel {
@@ -909,6 +1003,139 @@ body.modal-open {
   max-width: 860px;
 }
 
+.values-page-hero {
+  padding-top: 3.5rem;
+  padding-bottom: 0.5rem;
+  max-width: 860px;
+}
+
+.values-page-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  margin-bottom: 0.9rem;
+}
+
+.values-page-hero .lead {
+  max-width: 72ch;
+}
+
+.values-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.about-hero {
+  padding-top: 3.5rem;
+  padding-bottom: 0.5rem;
+  max-width: 860px;
+}
+
+.about-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  margin-bottom: 0.9rem;
+}
+
+.about-hero .lead {
+  max-width: 72ch;
+}
+
+.about-section {
+  margin-top: 3.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-section--flip .about-image-wrap {
+  order: 2;
+}
+
+.about-section--flip .about-copy {
+  order: 1;
+}
+
+.about-image-wrap {
+  margin-bottom: 0;
+}
+
+.image-placeholder.about-img {
+  min-height: 380px;
+  box-shadow: var(--shadow);
+}
+
+.about-copy h2 {
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  margin-bottom: 0.75rem;
+}
+
+.about-copy > p {
+  color: var(--muted);
+  margin-bottom: 0.85rem;
+  font-size: 0.98rem;
+  max-width: 58ch;
+  line-height: 1.65;
+}
+
+.about-copy p + p {
+  margin-top: 0.6rem;
+}
+
+.about-values-focus {
+  margin-top: 4rem;
+}
+
+.about-values-focus h2 {
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  margin-bottom: 1.2rem;
+  text-align: center;
+  max-width: 52ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-values-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.about-value-item {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.15rem;
+}
+
+.about-value-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.45rem;
+}
+
+.about-value-item p {
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.value-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.15rem;
+}
+
+.value-card h2 {
+  font-size: clamp(1.2rem, 2.3vw, 1.55rem);
+  margin-bottom: 0.45rem;
+}
+
+.value-card p {
+  color: var(--muted);
+}
+
 .funding-page-hero {
   padding-top: 3.5rem;
   padding-bottom: 0.5rem;
@@ -931,6 +1158,10 @@ body.modal-open {
 
 .pricing-page-hero .lead {
   max-width: 68ch;
+}
+
+.pricing-note {
+  margin-top: 0.8rem;
 }
 
 .pricing-detail-grid {
@@ -1159,8 +1390,24 @@ body.modal-open {
   .pricing-detail-grid,
   .funding-detail-grid,
   .funding-grid,
-  .roadmap-grid {
+  .roadmap-grid,
+  .values-preview-grid,
+  .values-grid,
+  .about-section,
+  .about-values-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-section--flip .about-image-wrap {
+    order: unset;
+  }
+
+  .about-section--flip .about-copy {
+    order: unset;
+  }
+
+  .image-placeholder.about-img {
+    min-height: 300px;
   }
 
   .float-card {
@@ -1199,6 +1446,14 @@ body.modal-open {
 
   .booking-embed-card--availability iframe {
     min-height: 500px;
+  }
+
+  .pricing-grid .price-card:nth-child(3) {
+    grid-column: auto;
+  }
+
+  .pricing-included-grid {
+    grid-template-columns: 1fr;
   }
 }
 
